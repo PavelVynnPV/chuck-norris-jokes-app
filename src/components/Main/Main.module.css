@@ -1,0 +1,140 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+.main_sec {
+  max-width: 100%;
+  height: 100%;
+}
+.content {
+  padding: 40px 140px 0;
+  max-width: 100%;
+}
+.title {
+  margin: 78px 0 43px;
+}
+.title h1 {
+  font-weight: bold;
+}
+.title h2 {
+  font-weight: 500;
+}
+.checkbox_block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.checkbox_block label {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.checkbox_block input {
+  margin-right: 20px;
+}
+.searchInput {
+  max-width: 680px;
+  height: 42px;
+  border: 2px solid #333333;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.searchInput::placeholder {
+  color: #ababab;
+}
+.getJoke_btn {
+  font-size: 16px;
+  width: 152px;
+  height: 42px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90.55deg, #8ea7ff 0%, #7291ff 100%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0 40px;
+}
+.unActive {
+  display: none;
+}
+.active {
+  display: block;
+}
+.categorie_btns_block {
+  max-width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn_categories {
+  margin: 10px;
+}
+.btn_categories span {
+  width: 77px;
+  height: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #ababab;
+  border-radius: 6px;
+  padding: 6px 15px;
+  color: #ababab;
+  cursor: pointer;
+}
+.btn_categories input[type="radio"]:checked ~ span.active_categorie_btn {
+  width: 107px;
+  height: 28px;
+  background: #f8f8f8;
+  border: 2px solid #333333;
+  border-radius: 6px;
+  color: #333333;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.icon_favourite_menu {
+  display: none;
+}
+.errorSearch {
+  font-weight: bold;
+  color: red;
+  font-size: 20px;
+}
+
+@media (max-width: 1300px) {
+  .icon_favourite_menu {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+  }
+  .icon_favourite_menu h1 {
+    margin-left: 10px;
+  }
+  .main_sec_bg_active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.308);
+  }
+  .content {
+    padding: 40px;
+  }
+}
